@@ -38,14 +38,31 @@
 // alert("objetivo cumplido")
 
 // suma
-console.log("goles")
-let goles = parseInt(prompt("Cuantos goles hiciste"))
-while (goles > 0) {
-  alert(`vas ${goles} goles, sos normal`)
-  goles++;
-  if(goles >= 10){
-    break
+// console.log("goles")
+// let goles = parseInt(prompt("Cuantos goles hiciste"))
+// while (goles > 0) {
+//   alert(`vas ${goles} goles, sos normal`)
+//   goles++;
+//   if(goles >= 10){
+//     break
+//   }
+// }
+// alert("sos bueno")
+
+function presupuesto(){
+  let sueldo = parseInt(prompt("cuanto ganas por mes"))
+  let canastaBasica = 200
+  presupuesto = sueldo - canastaBasica
+  if (presupuesto >=500){
+    return true
+  } else {
+      return false
   }
 }
-alert("sos bueno")
 
+let claseAlta = presupuesto()
+ if(claseAlta){ 
+   alert("puede comprar 10 productos")
+ } else {
+   alert("espera a rebajas")
+ }
